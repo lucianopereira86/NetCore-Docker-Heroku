@@ -67,7 +67,7 @@ Inside the publish folder, run in the terminal:
 docker build -t MYAPP .
 ```
 
-This will build a container for the .Net Core project with the same name of your app.
+This will create a image for the .Net Core project with the same name of your app.
 To authenticate with Heroku, run these commands and follow the instructions:
 
 ```batch
@@ -78,19 +78,19 @@ heroku login
 heroku container:login
 ```
 
-It's time to registry the app to receive the container
+Tag the image
 
 ```batch
 docker tag MYAPP registry.heroku.com/MYAPP/web
 ```
 
-Now, upload the container to Heroku
+Build the Dockerfile and push the image
 
 ```batch
 heroku container:push web -a MYAPP
 ```
 
-Finally, release it so the app can be updated
+Release the image to deploy the app
 
 ```batch
 heroku container:release web -a MYAPP
