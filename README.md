@@ -60,11 +60,11 @@ CMD ASPNETCORE_URLS=http://*:$PORT dotnet apimodelo.netcore.presentation.webapi.
 
 Do you remember the name of the app you have created in the Heroku website?
 It's the time to use it. 
-Replace &lt;MYAPP&gt; by your app's name in the following commands.
+Replace MYAPP by your app's name in the following commands.
 Inside the publish folder, run in the terminal:
 
 ```batch
-docker build -t &lt;MYAPP&gt; .
+docker build -t MYAPP .
 ```
 
 This will build a container for the .Net Core project with the same name of your app.
@@ -81,25 +81,25 @@ heroku container:login
 It's time to registry the app to receive the container
 
 ```batch
-docker tag &lt;MYAPP&gt; registry.heroku.com/&lt;MYAPP&gt;/web
+docker tag MYAPP registry.heroku.com/MYAPP/web
 ```
 
 Now, upload the container to Heroku
 
 ```batch
-heroku container:push web -a &lt;MYAPP&gt;
+heroku container:push web -a MYAPP
 ```
 
 Finally, release it so the app can be updated
 
 ```batch
-heroku container:release web -a &lt;MYAPP&gt;
+heroku container:release web -a MYAPP
 ```
 
 Access the URL of your app with Swagger
 
 ```batch
-https://&lt;MYAPP&gt;.herokuapp.com/swagger/index.html
+https://MYAPP.herokuapp.com/swagger/index.html
 ```
 
 It's Done!
