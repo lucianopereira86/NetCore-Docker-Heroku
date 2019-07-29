@@ -1,3 +1,5 @@
+![titulo](/docs/titulo.JPG)
+
 # NetCore-Docker-Heroku
 Simple guide to upload a .Net Core web API to Heroku by using Docker.
 
@@ -9,7 +11,7 @@ Simple guide to upload a .Net Core web API to Heroku by using Docker.
 ## Before start
 
 This guide is directed for those who have a mininum experience with Docker and a proper environment to run it.
-Also, the .Net Core 2.2 SDK must be installed in the machine.
+Also, the .Net Core 2.2 SDK must be installed in the machine. You can download it [here](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
 ## Heroku
 
